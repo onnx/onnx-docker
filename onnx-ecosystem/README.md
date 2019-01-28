@@ -10,8 +10,8 @@ You can use a prebuilt image of this Docker container on [DockerHub](https://hub
 
 1. Ensure that you have Docker installed, or are using Docker for Linux containers if on Windows.
 
-2. Navigate to the dockerfiles folder and build the image.
-    - `docker build -t onnx-ecosystem Dockerfile .`
+2. Navigate to the onnx-docker/onnx-ecosystem folder and build the image.
+    - `docker build . -t onnx-ecosystem`
 
 3. Run the Docker container.
     - `docker run -p 8888:8888 onnx-ecosystem`
