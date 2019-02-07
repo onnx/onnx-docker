@@ -3,24 +3,19 @@
 To store the docker BUILD scripts of ONNX related docker images.
 - onnx-docker-cpu
 - onnx-docker-gpu
-- onnx-ecosystem: Jupyter notebook environment for getting started quickly with ONNX models, ONNX converters, and inference using ONNX runtime.
+- [onnx-ecosystem](onnx-ecosystem): Jupyter notebook environment for getting started quickly with ONNX models, ONNX converters, and inference using ONNX runtime.
 
 ## Build the images
 ```
 docker build onnx-docker/onnx-docker-gpu
 
 docker build onnx-docker/onnx-docker-cpu
-<<<<<<< HEAD
 ```
 ```
 cd onnx-ecosystem
 docker build . -t onnx-ecosystem
 ```
-=======
 
-docker build -t onnx-ecosystem Dockerfile .
-
->>>>>>> 4428dae7307eda35b5ace49a8a66f40b911ce59d
 ## Run the images
 docker run -i -t image_id
 

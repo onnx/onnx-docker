@@ -11,10 +11,10 @@ You can use a prebuilt image of this Docker container on [DockerHub](https://hub
 ## Supported Framework -> ONNX converters
 - CoreML
 - Keras
-- SciKitLearn
+- SciKit-Learn
 - Tensorflow
 - PyTorch
-- LibSVM
+- LibSVM (preview)
 - LightGBM
 - CNTK
 - MXNet
@@ -41,7 +41,7 @@ You can use a prebuilt image of this Docker container on [DockerHub](https://hub
     You can also copy a whole folder using docker.
     - `docker cp PATH_TO_FOLDER/. CONTAINER_ID:/NAME_OF_FOLDER`
 
-7. Navigate to the scripts folder in the container and edit the appropriate notebook to convert your model to ONNX.
+7. Navigate to the `converter_scripts` folder in the container and edit the appropriate notebook to convert your model to ONNX.
 
 
 # Contributing
