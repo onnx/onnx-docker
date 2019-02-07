@@ -6,10 +6,14 @@ To store the docker BUILD scripts of ONNX related docker images.
 - onnx-ecosystem: Jupyter notebook environment for getting started quickly with ONNX models, ONNX converters, and inference using ONNX runtime.
 
 ## Build the images
+```
 docker build onnx-docker/onnx-docker-gpu
 docker build onnx-docker/onnx-docker-cpu
-docker build -t onnx-ecosystem Dockerfile .
-
+```
+```
+cd onnx-ecosystem
+docker build . -t onnx-ecosystem
+```
 ## Run the images
 docker run -i -t image_id
 docker run -p 8888:8888 onnx-ecosystem

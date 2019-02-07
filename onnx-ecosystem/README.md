@@ -1,12 +1,26 @@
-# About
+# ONNX Inference Ecosystem Docker Container
+
+## About
 
 This tool enables new users to quickly get started working with model conversions and inference in the ONNX model format.
 
-After following the steps below, you will launch a pre-configured Jupyter Notebook environment and explore starter scripts for model conversion from various frameworks (i.e. Caffe, CoreML, Keras) to the ONNX format, using [ONNX Runtime](https://aka.ms/onnxruntime) for inference.
+By following the steps below, you will launch a pre-configured Jupyter Notebook environment and explore starter scripts for model conversion from various frameworks (i.e. Caffe, CoreML, Keras) to the ONNX format, using [ONNX Runtime](https://aka.ms/onnxruntime) for inference.
 
 You can use a prebuilt image of this Docker container on [DockerHub](https://hub.docker.com/r/microsoft/).
 
-# Usage
+## Supported Framework -> ONNX converters
+- CoreML
+- Keras
+- SciKitLearn
+- Tensorflow
+- PyTorch
+- XGBoost
+- LibSVM
+- LightGBM
+- CNTK
+- Caffe (v1)
+
+## Usage
 
 1. Ensure that you have Docker installed, or are using Docker for Linux containers if on Windows.
 
@@ -16,13 +30,12 @@ You can use a prebuilt image of this Docker container on [DockerHub](https://hub
 3. Run the Docker container.
     - `docker run -p 8888:8888 onnx-ecosystem`
 
-4. Run `docker ps` in a terminal session to get the container name and verify your container is successfully running
+4. Run `docker ps` in a separate terminal session to get the container name and verify your container is successfully running.
 
 5. Navigate to the url that the Jupyter Notebook is running on and use the provided token in the console.
     - Should be in the form: `http://127.0.0.1:8888/?token=RANDOMSTRINGHERE`  
 
-6. Either upload a file using the Jupyter Notebook button on the top right, or docker cp the required
-model files to the container.
+6. Either upload a file using the Jupyter Notebook button on the top right, or docker cp the required model files to the container.
     - `docker cp PATH_TO_FILE CONTAINER_ID:/scripts/NAME_OF_FILE`
 
     You can also copy a whole folder using docker.
