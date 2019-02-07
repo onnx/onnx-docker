@@ -1,28 +1,28 @@
-# ONNX Inference Ecosystem Docker Container
+# ONNX Converter Ecosystem Docker Container
 
 ## About
 
 This tool enables new users to quickly get started working with model conversions and inference in the ONNX model format.
 
-By following the steps below, you will launch a pre-configured Jupyter Notebook environment and explore starter scripts for model conversion from various frameworks (i.e. Caffe, CoreML, Keras) to the ONNX format, using [ONNX Runtime](https://aka.ms/onnxruntime) for inference.
+By following the steps below, you will launch a pre-configured Jupyter Notebook environment and explore starter scripts for model conversion from various machine learning frameworks to the ONNX format, using [ONNX Runtime](https://aka.ms/onnxruntime) for inference.
 
-You can use a prebuilt image of this Docker container on [DockerHub](https://hub.docker.com/r/microsoft/).
-
-## Supported Framework -> ONNX converters
+## Supported Framework -> ONNX conversions
 - CoreML
 - Keras
 - SciKit-Learn
 - Tensorflow
 - PyTorch
-- LibSVM (preview)
 - LightGBM
 - CNTK
 - MXNet
 - Caffe (v1)
+- LibSVM (preview)
 
 ## Usage
 
-1. Ensure that you have Docker installed, or are using Docker for Linux containers if on Windows.
+0. Ensure that you have Docker installed, or are using Docker for Linux containers if on Windows.
+
+1. Clone this repository.
 
 2. Navigate to the onnx-docker/onnx-ecosystem folder and build the image.
     - `docker build . -t onnx-ecosystem`
@@ -41,8 +41,7 @@ You can use a prebuilt image of this Docker container on [DockerHub](https://hub
     You can also copy a whole folder using docker.
     - `docker cp PATH_TO_FOLDER/. CONTAINER_ID:/NAME_OF_FOLDER`
 
-7. Navigate to the `converter_scripts` folder in the container and edit the appropriate notebook to convert your model to ONNX.
-
+7. Navigate to the `converter_scripts` folder in the container and edit the appropriate notebook to convert your model to ONNX, or test the accuracy of the conversion using ONNX Runtime.
 
 # Contributing
 
@@ -53,6 +52,9 @@ the rights to use your contribution. For details, visit https://cla.microsoft.co
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
 For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
 contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+
+## Acknowledgements
+This container was based on an original [ONNX Converter docker container](https://github.com/Microsoft/onnxconverter) from 2018. The updated ecosystem docker container is the result of the efforts of the [ONNXMLTools Team](https://github.com/onnx/onnxmltools).
 
 ## License
 [MIT License](../LICENSE)
