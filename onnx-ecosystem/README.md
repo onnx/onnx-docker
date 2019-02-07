@@ -14,10 +14,10 @@ You can use a prebuilt image of this Docker container on [DockerHub](https://hub
 - SciKitLearn
 - Tensorflow
 - PyTorch
-- XGBoost
 - LibSVM
 - LightGBM
 - CNTK
+- MXNet
 - Caffe (v1)
 
 ## Usage
@@ -27,7 +27,7 @@ You can use a prebuilt image of this Docker container on [DockerHub](https://hub
 2. Navigate to the onnx-docker/onnx-ecosystem folder and build the image.
     - `docker build . -t onnx-ecosystem`
 
-3. Run the Docker container.
+3. Run the Docker container to launch a Jupyter notebook server.
     - `docker run -p 8888:8888 onnx-ecosystem`
 
 4. Run `docker ps` in a separate terminal session to get the container name and verify your container is successfully running.
