@@ -25,11 +25,11 @@ By following the steps below, you will launch a pre-configured Jupyter Notebook 
 
 1. Obtain the ONNX ecosystem docker image. There are two ways to do this:
 
-  a. Pull the pre-built Docker image from DockerHub
-      - `docker pull onnx/onnx-ecosystem`
+  - Pull the pre-built Docker image from DockerHub
+    - `docker pull onnx/onnx-ecosystem`
 
-  b. Clone this repository. Navigate to the onnx-docker/onnx-ecosystem folder and build the image locally with the following command.
-      - `docker build . -t onnx/onnx-ecosystem`
+  - Clone this repository. Navigate to the onnx-docker/onnx-ecosystem folder and build the image locally with the following command.
+    - `docker build . -t onnx/onnx-ecosystem`
 
 2. Run the Docker container to launch a Jupyter notebook server. The -p argument forwards your local port 8888 to the exposed port 8888 for the Jupyter notebook environment in the container.
     - `docker run -p 8888:8888 onnx/onnx-ecosystem`
