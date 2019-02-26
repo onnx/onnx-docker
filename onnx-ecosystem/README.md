@@ -16,7 +16,7 @@ By following the steps below, you will launch a pre-configured Jupyter Notebook 
 - CNTK
 - MXNet
 - Caffe (v1)
-- XGBoost
+- XGBoost (preview)
 - LibSVM (preview)
 
 ## Usage
