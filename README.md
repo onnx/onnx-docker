@@ -4,7 +4,6 @@ To store the docker BUILD scripts of ONNX related docker images.
 - [onnx-docker-cpu](onnx-docker-cpu/Dockerfile): Image with ONNX, PyTorch, Tensorflow support
 - [onnx-docker-gpu](onnx-docker-gpu/Dockerfile): Image with ONNX, PyTorch (CUDA), Caffe2 support
 - [onnx-ecosystem](onnx-ecosystem): Jupyter notebook environment for getting started quickly with ONNX models, ONNX converters, and inference using ONNX Runtime.
-  - Docker Image includes ONNX, ONNXMLTools, ONNXRuntime, and converter notebooks for SciKitLearn, Keras, CoreMLTools, PyTorch, MXNet, TensorFlow, Caffe, LightGBM, CNTK, LibSVM (preview) and XGBoost (preview).
 
 ## Docker Image Workflow
 
