@@ -22,7 +22,7 @@ To store the docker BUILD scripts of ONNX related docker images.
   docker build . -t onnx-ecosystem
   ```
 
-  Alternatively, you can pull a pre-built image from DockerHub.
+  Alternatively, you can pull a pre-built image from [DockerHub](https://hub.docker.com/u/onnx).
   ```
   docker pull onnx/onnx-docker:branch-name
 
