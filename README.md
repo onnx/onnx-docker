@@ -2,8 +2,8 @@
 
 To store the docker BUILD scripts of ONNX related docker images.
 - [onnx-docker-cpu](onnx-docker-cpu/Dockerfile): Image with ONNX, PyTorch, Tensorflow support
-- [onnx-docker-gpu](onnx-docker-gpu/Dockerfile): Image with ONNX, PyTorch (CUDA), Caffe2 support
-- [onnx-ecosystem](onnx-ecosystem): Jupyter notebook environment for getting started quickly with ONNX models, ONNX converters, and inference using ONNX Runtime. Docker Image includes ONNX, ONNXMLTools, ONNXRuntime, SciKitLearn, Keras, CoreMLTools, PyTorch, TensorFlow, Caffe, LightGBM, CNTK, and preview converter notebooks for LibSVM and XGBoost.
+- [onnx-docker-gpu](onnx-docker-gpu/Dockerfile): [NVIDIA Docker Image](https://github.com/nvidia/nvidia-docker/wiki/Installation-(version-2.0)) with ONNX, PyTorch (CUDA), Caffe2 support
+- [onnx-ecosystem](onnx-ecosystem): Jupyter notebook environment for getting started quickly with ONNX models, ONNX converters, and inference using ONNX Runtime. Docker Image includes ONNX, ONNXMLTools, ONNXRuntime, and converter notebooks for SciKitLearn, Keras, CoreMLTools, PyTorch, MXNet, TensorFlow, Caffe, LightGBM, CNTK, LibSVM (preview) and XGBoost (preview).
 
 ## Docker Image Workflow
 
@@ -11,11 +11,14 @@ To store the docker BUILD scripts of ONNX related docker images.
 
 You can clone this repository and build your desired image.
 ```
+# onnx-docker-cpu container
 docker build onnx-docker/onnx-docker-cpu
 
+# onnx-docker-gpu container
 docker build onnx-docker/onnx-docker-gpu
 
-cd ecosystem
+# onnx-ecosystem container
+cd onnx-ecosystem
 docker build . -t onnx-ecosystem
 ```
 
