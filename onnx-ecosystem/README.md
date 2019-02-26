@@ -23,26 +23,29 @@ By following the steps below, you will launch a pre-configured Jupyter Notebook 
 
 0. Ensure that you have Docker installed, or are using Docker for Linux containers if on Windows.
 
-1. Clone this repository.
+1. Obtain the ONNX ecosystem docker image. There are two ways to do this:
 
-2. Navigate to the onnx-docker/onnx-ecosystem folder and build the image.
-    - `docker build . -t onnx-ecosystem`
+  a. Pull the pre-built Docker image from DockerHub
+      - `docker pull onnx/onnx-ecosystem`
 
-3. Run the Docker container to launch a Jupyter notebook server.
-    - `docker run -p 8888:8888 onnx-ecosystem`
+  b. Clone this repository. Navigate to the onnx-docker/onnx-ecosystem folder and build the image locally with the following command.
+      - `docker build . -t onnx/onnx-ecosystem`
 
-4. Run `docker ps` in a separate terminal session to get the container name and verify your container is successfully running.
+2. Run the Docker container to launch a Jupyter notebook server. The -p argument forwards your local port 8888 to the exposed port 8888 for the Jupyter notebook environment in the container.
+    - `docker run -p 8888:8888 onnx/onnx-ecosystem`
 
-5. Navigate to the url that the Jupyter Notebook is running on and use the provided token in the console.
+3. Run `docker ps` in a separate terminal session to get the container name and verify your container is successfully running.
+
+4. Navigate to the url that the Jupyter Notebook is running on and use the provided token in the console.
     - Should be in the form: `http://127.0.0.1:8888/?token=RANDOMSTRINGHERE`  
 
-6. Either upload a file using the Jupyter Notebook button on the top right, or docker cp the required model files to the container.
+5. Either upload a file using the Jupyter Notebook "Upload" button on the top right, or docker cp the required model files to the container.
     - `docker cp PATH_TO_FILE CONTAINER_ID:/scripts/NAME_OF_FILE`
 
     You can also copy a whole folder using docker.
     - `docker cp PATH_TO_FOLDER/. CONTAINER_ID:/NAME_OF_FOLDER`
 
-7. Navigate to the `converter_scripts` folder in the container and edit the appropriate notebook to convert your model to ONNX, or test the accuracy of the conversion using ONNX Runtime.
+6. Navigate to the `converter_scripts` folder in the container and edit the appropriate notebook to convert your model to ONNX, or test the accuracy of the conversion using ONNX Runtime.
 
 # Contributing
 
