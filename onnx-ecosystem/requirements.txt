@@ -14,7 +14,7 @@ keras==2.1.6
 keras2onnx
 
 scikit-learn==0.20.0
-skl2onnx==1.4.4
+skl2onnx
 
 tf2onnx
 
