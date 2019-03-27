@@ -1,6 +1,6 @@
 FROM ubuntu:16.04
 MAINTAINER Vinitra Swamy "viswamy@microsoft.com"
-
+ARG DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && \
 	apt-get install -y sudo \
 	build-essential curl \
