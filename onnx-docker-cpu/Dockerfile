@@ -1,6 +1,5 @@
 FROM ubuntu:16.04
 
-LABEL com.nvidia.volumes.needed="nvidia_driver"
 RUN apt-get update && apt-get install -y --no-install-recommends \
          build-essential \ 
          git \
@@ -18,19 +17,18 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
          libprotobuf-dev \
          protobuf-compiler \
          cmake \
-         python python-pip python-dev python-setuptools && \
+         python python3-pip python3-dev && \
     rm -rf /var/lib/apt/lists/*
 
-RUN pip install --upgrade pip; apt remove -y python-pip
-RUN pip install wheel ipython==5.0.0 numpy scipy pyyaml pytest tabulate ninja future tf-nightly torchvision
+RUN pip3 install --upgrade pip setuptools; apt remove -y python3-pip
+RUN pip3 install wheel ipython==5.0.0 numpy scipy pyyaml pytest tabulate ninja future tensorflow==1.15 torchvision
 
 RUN mkdir -p /root/programs
-RUN git clone --recursive https://github.com/Ac2zoom/onnx.git /root/programs/onnx
+RUN git clone --recursive https://github.com/onnx/onnx.git /root/programs/onnx
 RUN git clone --recursive https://github.com/pytorch/pytorch.git /root/programs/pytorch
 RUN git clone https://github.com/onnx/onnx-tensorflow.git /root/programs/onnx-tensorflow
-RUN cd /root/programs/onnx; git submodule update --init; git checkout scoreboard; python setup.py develop
-RUN cd /root/programs/pytorch; pip install -r "requirements.txt"; \
-    NO_CUDA=1 FULL_CAFFE2=1 python setup.py build_deps develop
-RUN cd /root/programs/onnx-tensorflow; pip install -e .
+RUN cd /root/programs/onnx && python3 setup.py develop
+RUN pip3 install numpy && pip3 install --pre torch torchvision -f https://download.pytorch.org/whl/nightly/cpu/torch_nightly.html
+RUN cd /root/programs/onnx-tensorflow && pip3 install -e .
 
 WORKDIR /root/programs

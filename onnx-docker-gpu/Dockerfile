@@ -3,7 +3,7 @@
 # Execute "docker run -i -t image_id", where image_id is the id of the image you just generated.
 # Try "python tutorial-without-mobile-part.py".
 
-FROM nvidia/cuda:8.0-cudnn6-devel-ubuntu16.04
+FROM nvidia/cuda:10.1-cudnn7-devel-ubuntu16.04
 
 RUN echo "deb http://developer.download.nvidia.com/compute/machine-learning/repos/ubuntu1604/x86_64 /" > /etc/apt/sources.list.d/nvidia-ml.list
 
@@ -25,17 +25,16 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
          libprotobuf-dev \
          protobuf-compiler \
          cmake \
-         python python-pip python-dev python-setuptools && \
+         python python3-pip python3-dev && \
      rm -rf /var/lib/apt/lists/*
 
-RUN pip install --upgrade pip; apt remove -y python-pip
-RUN pip install wheel ipython==5.0 numpy scipy pyyaml
+RUN pip3 install --upgrade pip setuptools && apt remove -y python3-pip
+RUN pip3 install wheel ipython==5.0 numpy scipy pyyaml
 
 RUN mkdir -p /root/programs
 RUN git clone --recursive https://github.com/onnx/onnx.git /root/programs/onnx
 RUN git clone --recursive https://github.com/pytorch/pytorch.git /root/programs/pytorch
-RUN cd /root/programs/onnx; python setup.py develop
-RUN cd /root/programs/pytorch; pip install -r "requirements.txt"; \
-    NO_CUDA=0 FULL_CAFFE2=1 python setup.py build develop
+RUN cd /root/programs/onnx; python3 setup.py develop
+RUN pip3 install --pre torch torchvision -f https://download.pytorch.org/whl/nightly/cu101/torch_nightly.html
 
 WORKDIR /root/programs
