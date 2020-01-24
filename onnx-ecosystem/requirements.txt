@@ -31,7 +31,7 @@ lightgbm==2.2.3
 cntk==2.6
 
 h5py==2.8.0
-mxnet==1.2.1
+mxnet==1.2.0
 
 onnx
 onnxmltools
