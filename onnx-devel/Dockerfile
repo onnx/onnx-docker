@@ -1,8 +1,9 @@
-FROM ubuntu:16.04
+FROM ubuntu:18.04
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
          build-essential \
          git \
+         vim \
          libprotoc-dev \
          protobuf-compiler \
          python python-pip python-dev python-setuptools && \
