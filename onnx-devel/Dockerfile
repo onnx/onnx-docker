@@ -13,7 +13,7 @@ RUN pip install --upgrade pip; apt remove -y python-pip
 
 RUN mkdir -p /root/programs && \
     git clone https://github.com/onnx/onnx.git /root/programs/onnx && \
-    cd onnx && \
+    cd /root/programs/onnx && \
     git submodule update --init --recursive && \
     python setup.py install
 
