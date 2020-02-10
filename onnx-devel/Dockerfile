@@ -6,6 +6,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
          vim \
          libprotoc-dev \
          protobuf-compiler \
+         cmake \
          python python-pip python-dev python-setuptools && \
     rm -rf /var/lib/apt/lists/*
 
