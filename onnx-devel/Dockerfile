@@ -17,3 +17,4 @@ RUN mkdir -p /root/programs && \
     python setup.py install
 
 WORKDIR /root/programs
+ENTRYPOINT ["/bin/bash"]
