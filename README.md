@@ -1,8 +1,7 @@
 # What is this repository for?
 
 To store the docker BUILD scripts of ONNX related docker images.
-- [onnx-docker-cpu](onnx-docker-cpu/Dockerfile): Image with ONNX, PyTorch, Tensorflow support
-- [onnx-docker-gpu](onnx-docker-gpu/Dockerfile): Image with ONNX, PyTorch (CUDA), Caffe2 support
+- [onnx-dev](onnx-dev/Dockerfile): Build ONNX from source with minimal dependencies.
 - [onnx-ecosystem](onnx-ecosystem): Jupyter notebook environment for getting started quickly with ONNX models, ONNX converters, and inference using ONNX Runtime.
 
 ## Docker Image Workflow
@@ -11,11 +10,9 @@ To store the docker BUILD scripts of ONNX related docker images.
 
   You can clone this repository and build your desired image.
   ```
-  # onnx-docker-cpu container
-  docker build onnx-docker/onnx-docker-cpu
-
-  # onnx-docker-gpu container
-  docker build onnx-docker/onnx-docker-gpu
+  # onnx-developer container
+  cd onnx-docker
+  docker build . -t onnx-dev
 
   # onnx-ecosystem container
   cd onnx-ecosystem
@@ -24,8 +21,6 @@ To store the docker BUILD scripts of ONNX related docker images.
 
   Alternatively, you can pull a pre-built image from [DockerHub](https://hub.docker.com/u/onnx).
   ```
-  docker pull onnx/onnx-docker:branch-name
-
   docker pull onnx/onnx-ecosystem
   ```
 
@@ -33,7 +28,7 @@ To store the docker BUILD scripts of ONNX related docker images.
 
 ```
 docker images
-docker run -i -t image_id
+docker run -i -t onnx-dev
 
 docker run -p 8888:8888 onnx-ecosystem
 ```
