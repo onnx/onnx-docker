@@ -11,7 +11,7 @@ To store the docker BUILD scripts of ONNX related docker images.
   You can clone this repository and build your desired image.
   ```
   # onnx-developer container
-  cd onnx-docker
+  cd onnx-dev
   docker build . -t onnx-dev
 
   # onnx-ecosystem container
@@ -22,6 +22,7 @@ To store the docker BUILD scripts of ONNX related docker images.
   Alternatively, you can pull a pre-built image from [DockerHub](https://hub.docker.com/u/onnx).
   ```
   docker pull onnx/onnx-ecosystem
+  docker pull onnx/onnx-dev
   ```
 
 2. Run the images
