@@ -49,10 +49,10 @@ By following the steps below, you will launch a pre-configured Jupyter Notebook 
 
 # Contributing
 
-This project welcomes contributions and suggestions. For details, visit the [ONNX Open Source Code of Conduct](https://onnx.ai/codeofconduct.html).
+This project welcomes contributions and suggestions. For details, please read through the [contributor's guide](https://github.com/onnx/onnx/blob/master/docs/CONTRIBUTING.md) and the [ONNX Open Source Code of Conduct](https://onnx.ai/codeofconduct.html).
 
 ## Acknowledgements
 This container was based on an original [ONNX Converter docker container](https://github.com/Microsoft/onnxconverter) from 2018. The updated ecosystem docker container is the result of the efforts of the [ONNXMLTools](https://github.com/onnx/onnxmltools) team.
 
 ## License
-[MIT License](../LICENSE)
+[MIT License](https://github.com/onnx/onnx-docker/blob/master/LICENSE)

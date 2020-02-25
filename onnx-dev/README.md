@@ -21,10 +21,10 @@ This tool enables developers to quickly get started with an ONNX build from sour
 
 # Contributing
 
-This project welcomes contributions and suggestions. For details, visit the [ONNX Open Source Code of Conduct](https://onnx.ai/codeofconduct.html).
+This project welcomes contributions and suggestions. For details, please read through the [contributor's guide](https://github.com/onnx/onnx/blob/master/docs/CONTRIBUTING.md) and the [ONNX Open Source Code of Conduct](https://onnx.ai/codeofconduct.html).
 
 ## Acknowledgements
 The [source dockerfile](https://github.com/onnx/onnx-docker/blob/master/onnx-dev/Dockerfile) is being maintained in the [onnx/onnx-docker](https://github.com/onnx/onnx-docker) repository.
 
 ## License
-[MIT License](../LICENSE)
+[MIT License](https://github.com/onnx/onnx-docker/blob/master/LICENSE)
