@@ -2,7 +2,7 @@
 
 ## About
 
-This image enables new users to get started with a published ONNX package from PyPi in a lightweight Linux-based image without worrying about dependencies.
+This image enables new users to get started with a [published ONNX package from PyPi](https://pypi.org/project/onnx/) in a lightweight Linux-based image without worrying about dependencies.
 
 ## Usage
 
@@ -13,10 +13,10 @@ This image enables new users to get started with a published ONNX package from P
   - Pull the pre-built Docker image from DockerHub
     - `docker pull onnx/onnx-base`
 
-  - Clone the [source repository](https://github.com/onnx/onnx-docker). Navigate to the onnx-docker/onnx-dev folder and build the image locally with the following command.
+  - Clone the [source repository](https://github.com/onnx/onnx-docker). Navigate to the onnx-docker/onnx-base folder and build the image locally with the following command.
     - `docker build . -t onnx/onnx-base`
 
-2. Run the Docker container to launch the ONNX developer image.
+2. Run the Docker container to launch the ONNX base image.
     - `docker run -it onnx/onnx-base`
 
 # Contributing
