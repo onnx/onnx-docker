@@ -8,7 +8,7 @@ This image enables new users to get started with a [published ONNX package from 
 
 0. Ensure that you have Docker installed, or are using Docker for Linux containers if on Windows.
 
-1. Obtain the ONNX ecosystem docker image. There are two ways to do this:
+1. Obtain the ONNX base docker image. There are two ways to do this:
 
   - Pull the pre-built Docker image from DockerHub
     - `docker pull onnx/onnx-base`
