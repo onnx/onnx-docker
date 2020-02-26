@@ -37,8 +37,6 @@ To store the docker BUILD scripts of ONNX related docker images.
 docker images
 
 docker run -it onnx-base
-
 docker run -it onnx-dev
-
 docker run -p 8888:8888 onnx-ecosystem
 ```
