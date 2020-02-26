@@ -1,8 +1,8 @@
-# ONNX Developer Docker Container
+# ONNX Base Docker Container
 
 ## About
 
-This tool enables new users to get started with a published ONNX package from PyPi in a lightweight Linux-based image without worrying about dependencies.
+This image enables new users to get started with a published ONNX package from PyPi in a lightweight Linux-based image without worrying about dependencies.
 
 ## Usage
 
