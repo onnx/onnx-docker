@@ -1,4 +1,4 @@
-FROM ubuntu:16.04
+FROM ubuntu:18.04
 MAINTAINER Vinitra Swamy "viswamy@microsoft.com"
 ARG DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && \
@@ -6,14 +6,14 @@ RUN apt-get update && \
 	build-essential curl \
 	libcurl4-openssl-dev \
 	libssl-dev wget \
-	python 3.6 python3-pip \
-	python3-dev git
-RUN pip3 install --upgrade pip
+	python3-pip \
+	git && \
+	pip3 install --upgrade pip
 
-RUN mkdir scripts
-RUN cd scripts
-RUN mkdir converter_scripts
-RUN mkdir inference_demos
+RUN mkdir scripts && \
+		cd scripts && \
+		mkdir converter_scripts && \
+		mkdir inference_demos
 COPY converter_scripts/ scripts/converter_scripts/
 COPY inference_demos/ scripts/inference_demos/
 COPY requirements.txt requirements.txt
