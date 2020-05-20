@@ -1,13 +1,14 @@
-numpy==1.16.0
+numpy==1.16.6
 jupyter==1.0.0
-six==1.10.0
+six==1.11.0
 opencv-python==3.2.0.6
 matplotlib==2.1.1
 pandas==0.24.0
 pillow==7.0.0
 scipy==1.0.0
+setuptools==41.0.0
 
-coremltools==2.0
+coremltools==2.1
 
 tensorflow==1.15.2
 keras==2.1.6
@@ -31,7 +32,7 @@ lightgbm==2.2.3
 cntk==2.6
 
 h5py==2.8.0
-mxnet==1.2.0
+mxnet==1.6.0
 
 onnx
 onnxmltools
