@@ -20,7 +20,7 @@ skl2onnx
 tf2onnx
 
 torchvision==0.5.0
-torch==1.0.1
+torch==1.5.1
 
 xgboost==0.81
 
