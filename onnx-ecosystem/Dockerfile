@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: Apache-2.0
 FROM ubuntu:18.04
 MAINTAINER Vinitra Swamy "viswamy@microsoft.com"
 ARG DEBIAN_FRONTEND=noninteractive

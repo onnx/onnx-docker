@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: Apache-2.0
 FROM python:3.7-slim
 MAINTAINER Vinitra Swamy "viswamy@microsoft.com"
 RUN apt-get update && apt-get install -y --no-install-recommends \

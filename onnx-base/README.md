@@ -1,3 +1,5 @@
+<!--- SPDX-License-Identifier: Apache-2.0 -->
+
 # ONNX Base Docker Container
 
 ## About
@@ -27,4 +29,4 @@ This project welcomes contributions and suggestions. For details, please read th
 The [source dockerfile](https://github.com/onnx/onnx-docker/blob/master/onnx-base/Dockerfile) is being maintained in the [onnx/onnx-docker](https://github.com/onnx/onnx-docker) repository.
 
 ## License
-[MIT License](https://github.com/onnx/onnx-docker/blob/master/LICENSE)
+[Apache License v2.0](https://github.com/onnx/onnx-docker/blob/master/LICENSE)

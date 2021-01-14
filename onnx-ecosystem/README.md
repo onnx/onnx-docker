@@ -1,3 +1,5 @@
+<!--- SPDX-License-Identifier: Apache-2.0 -->
+
 # ONNX Converter Ecosystem Docker Container
 
 ## About
@@ -37,7 +39,7 @@ By following the steps below, you will launch a pre-configured Jupyter Notebook 
 3. Run `docker ps` in a separate terminal session to get the container name and verify your container is successfully running.
 
 4. Navigate to the url that the Jupyter Notebook is running on and use the provided token in the console.
-    - Should be in the form: `http://127.0.0.1:8888/?token=RANDOMSTRINGHERE`  
+    - Should be in the form: `http://127.0.0.1:8888/?token=RANDOMSTRINGHERE`
 
 5. Either upload a file using the Jupyter Notebook "Upload" button on the top right, or docker cp the required model files to the container.
     - `docker cp PATH_TO_FILE CONTAINER_ID:/scripts/NAME_OF_FILE`
@@ -55,4 +57,4 @@ This project welcomes contributions and suggestions. For details, please read th
 This container was based on an original [ONNX Converter docker container](https://github.com/Microsoft/onnxconverter) from 2018. The updated ecosystem docker container is the result of the efforts of the [ONNXMLTools](https://github.com/onnx/onnxmltools) team.
 
 ## License
-[MIT License](https://github.com/onnx/onnx-docker/blob/master/LICENSE)
+[Apache License v2.0](https://github.com/onnx/onnx-docker/blob/master/LICENSE)
