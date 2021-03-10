@@ -1,3 +1,5 @@
+<!--- SPDX-License-Identifier: Apache-2.0 -->
+
 # What is this repository for?
 
 To store the docker BUILD scripts of ONNX related docker images.
