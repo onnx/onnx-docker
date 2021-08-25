@@ -10,7 +10,7 @@ setuptools==41.0.0
 
 coremltools==2.1
 
-tensorflow==1.15.2
+tensorflow==2.5.1
 keras==2.1.6
 keras2onnx
 
