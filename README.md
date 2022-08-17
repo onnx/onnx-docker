@@ -1,4 +1,4 @@
-# [Notice] We have stopped development of onnx-docker. This repo and related DockerHub won't be updated anymore.
+# [Notice] We have stopped development of onnx-docker. This repo and related DockerHub won't be updated anymore. To install newer ONNX, please check [the document](https://github.com/onnx/onnx#installation) in the onnx repo.
 
 <!--- SPDX-License-Identifier: Apache-2.0 -->
 
