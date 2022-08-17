@@ -1,6 +1,6 @@
-# [Notice] We have stopped development of onnx-docker. This repo and related DockerHub won't be updated anymore. To install newer ONNX, please check [the document](https://github.com/onnx/onnx#installation) in the onnx repo.
-
 <!--- SPDX-License-Identifier: Apache-2.0 -->
+
+# [<b>Notice</b>] We have stopped development of onnx-docker. This repo and related DockerHub won't be updated anymore. To install newer ONNX, you can get it from [PyPI](https://pypi.org/project/onnx/) or [conda-forge](https://anaconda.org/conda-forge/onnx). For more installation details, please check the [README.md](https://github.com/onnx/onnx#installation) in the onnx repo.
 
 # What is this repository for?
 
