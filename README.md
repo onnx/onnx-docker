@@ -1,3 +1,5 @@
+# [Notice] We have stopped development of onnx-docker. This repo and related DockerHub won't be updated anymore.
+
 <!--- SPDX-License-Identifier: Apache-2.0 -->
 
 # What is this repository for?
